@@ -1,16 +1,8 @@
 name: Build GUI Exe
 
 on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
   workflow_dispatch:
-    inputs:
-      tag_name:
-        description: 'Tag name for the Docker image'
-        required: false
-        default: 'latest'
+  
 jobs:
   build:
     runs-on: windows-latest
